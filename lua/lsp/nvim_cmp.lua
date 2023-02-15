@@ -16,12 +16,29 @@ if not lspkind_status then
 	return
 end
 
-require("luasnip.loaders.from_snipmate").lazy_load({ paths = "~/.config/nvim/snippets" })
+require("luasnip.loaders.from_snipmate").lazy_load({ paths = "~/.config/nvim/snippets/" })
+require("luasnip.loaders.from_lua").load({ paths = "~/.config/nvim/snippets" })
 
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()
 
 vim.opt.completeopt = "menu,menuone,noselect"
+
+local M = {}
+
+function M.reload_package(package_name)
+	for module_name, _ in pairs(package.loaded) do
+		if string.find(module_name, "^" .. package_name) then
+			package.loaded[module_name] = nil
+			require(module_name)
+		end
+	end
+end
+
+function M.refresh_snippets()
+	luasnip.cleanup()
+	M.reload_package("lsp.snips")
+end
 
 cmp.setup({
 	snippet = {
