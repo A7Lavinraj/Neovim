@@ -13,12 +13,8 @@
 - Modern Design.
 - Keybinds that make sense.
 - Impressive buffline tabs.
-- Interactive Floating file browser.
 - Simple and accurate statusline.
-- Autocompletion.
-- Lsp.
 - Interactive terminal.
-- Integrated Treesitter.
 - Autopairs.
 - Aucommands to run code according to filetype.
 

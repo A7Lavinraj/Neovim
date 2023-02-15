@@ -20,9 +20,6 @@ packer.startup(function(use)
 	-- autopairs
 	use("windwp/nvim-autopairs")
 
-	-- treesitter
-	use("nvim-treesitter/nvim-treesitter")
-
 	-- terminal
 	use("akinsho/toggleterm.nvim")
 
