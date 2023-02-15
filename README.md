@@ -40,7 +40,7 @@ Move-Item $env:LOCALAPPDATA\nvim $env:LOCALAPPDATA\nvim.bak
 
 Move-Item $env:LOCALAPPDATA\nvim-data $env:LOCALAPPDATA\nvim-data.bak
 
-git clone git@github.com:A7Lavinraj/neovim-configs.git $env:LOCALAPPDATA\nvim
+git https://github.com/A7Lavinraj/Neovim.git $env:LOCALAPPDATA\nvim
 ```
 
 - I want to remove my old configurations.
@@ -50,7 +50,7 @@ Remove-Item $env:LOCALAPPDATA\nvim
 
 Remove-Item $env:LOCALAPPDATA\nvim-data
 
-git clone git@github.com:A7Lavinraj/neovim-configs.git
+git clone git@github.com:A7Lavinraj/Neovim.git $env:LOCALAPPDATA\nvim
 ```
 
 #### Linux
@@ -63,7 +63,7 @@ mv ~/.local/share/nvim ~/.local/share/nvim.bak
 mv ~/.local/state/nvim ~/.local/state/nvim.bak
 mv ~/.cache/nvim ~/.cache/nvim.bak
 
-git clone git@github.com:A7Lavinraj/neovim-configs.git ~/.config/nvim
+git clone git@github.com:A7Lavinraj/Neovim.git ~/.config/nvim
 ```
 
 - I want to remove my old configurations.
@@ -74,7 +74,7 @@ sudo rm -r ~/.local/share/nvim
 sudo rm -r ~/.local/state/nvim
 sudo rm -r ~/.cache/nvim
 
-git clone git@github.com:A7Lavinraj/neovim-configs.git ~/.config/nvim
+git clone git@github.com:A7Lavinraj/Neovim.git ~/.config/nvim
 ```
 
 ### Hightlights
