@@ -1,6 +1,0 @@
-require("lsp.lspconfig")
-require("lsp.lspkind")
-require("lsp.lspsaga")
-require("lsp.mason")
-require("lsp.null-ls")
-require("lsp.nvim_cmp")
