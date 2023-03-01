@@ -5,7 +5,7 @@ vim.opt.encoding = "utf-8"
 vim.scriptencoding = "utf-8"
 
 -- basic options
-
+vim.api.nvim_set_hl(0, 'CursorLine', { underline = true })
 vim.wo.number = true
 vim.opt.title = true
 vim.opt.autoindent = true

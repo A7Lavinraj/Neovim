@@ -14,9 +14,6 @@ packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 	use("kyazdani42/nvim-web-devicons") -- icons for every plugin
 
-	-- statusline
-	use("hoob3rt/lualine.nvim") -- statusline
-
 	-- autopairs
 	use("windwp/nvim-autopairs")
 
@@ -25,9 +22,6 @@ packer.startup(function(use)
 
 	-- tabs
 	use("akinsho/bufferline.nvim")
-
-	-- colorscheme
-	use("bluz71/vim-nightfly-colors")
 
 	-- autocompletion
 	use("hrsh7th/nvim-cmp") -- completion

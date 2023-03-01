@@ -1,5 +1,2 @@
-require("plugin.nightfly")
-require("plugin.lualine")
 require("plugin.autopairs")
-require("plugin.tabs")
 require("plugin.terminal")

@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/home/lavin/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["lualine.nvim"] = {
-    loaded = true,
-    path = "/home/lavin/.local/share/nvim/site/pack/packer/start/lualine.nvim",
-    url = "https://github.com/hoob3rt/lualine.nvim"
-  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/lavin/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -118,11 +113,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lavin/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/home/lavin/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -143,11 +133,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lavin/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["vim-nightfly-colors"] = {
-    loaded = true,
-    path = "/home/lavin/.local/share/nvim/site/pack/packer/start/vim-nightfly-colors",
-    url = "https://github.com/bluz71/vim-nightfly-colors"
   }
 }
 
