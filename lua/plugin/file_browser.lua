@@ -3,6 +3,7 @@ if not status then
 	return
 end
 local actions = require("telescope.actions")
+local builtin = require("telescope.builtin")
 
 local function telescope_buffer_dir()
 	return vim.fn.expand("%:p:h")
@@ -55,4 +56,7 @@ vim.keymap.set("n", "sf", function()
 		initial_mode = "normal",
 		layout_config = { height = 20 },
 	})
+end)
+vim.keymap.set("n", "sb", function()
+	builtin.buffers()
 end)
